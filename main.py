@@ -10,7 +10,7 @@ app = FastAPI(
 
 
 # New, correct code
-with open("../model.pkl", "rb") as f:
+with open("model.pkl", "rb") as f:
     model = pickle.load(f)
 
 
@@ -39,6 +39,7 @@ def model_predict(water: Water):
         return "Water is Consumable"
     else:
         return "Water is not Consumable"
+
 
 
 
